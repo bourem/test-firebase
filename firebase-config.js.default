@@ -1,0 +1,6 @@
+var firebase_config = {
+    apiKey: "AIzaSy___",
+    authDomain: "___.firebaseapp.com",
+    databaseURL: "https://___.firebaseio.com",
+    storageBucket: "___.appspot.com",
+};

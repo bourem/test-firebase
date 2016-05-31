@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Firebase test</title>
+        <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+        <script src="./firebase-config.js"></script>
+        <script>
+        // Initialize Firebase
+        firebase.initializeApp(firebase_config);
+
+        var database = firebase.database();
+        database.ref('/a').once('value').then(function(snapshot) {
+            console.log(snapshot.val());
+            return snapshot.val();
+        }).then(function(snapshot){database.ref('/a').set(snapshot + "--")});
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
